@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление товара</title>
+</head>
+<body>
+    <h2>Добавление нового товара в базу данных</h2>
+    
+    <!-- Навигация -->
+    <div style="margin-bottom: 20px;">
+        <a href="add_goods.html">Добавить товар</a> | 
+        <a href="show.php">Просмотр товаров</a>
+    </div>
+    
+    <form action="save_goods.php" method="post">
+        <table>
+            <tr>
+                <td>Наименование:</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Цена:</td>
+                <td><input type="number" name="price" min="0" required></td>
+            </tr>
+            <tr>
+                <td>Производитель:</td>
+                <td><input type="text" name="producer" required></td>
+            </tr>
+            <tr>
+                <td>Телефон:</td>
+                <td><input type="text" name="phone" pattern="[0-9]{6}" 
+                          title="6 цифр" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Сохранить">
+                    <input type="reset" value="Очистить">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

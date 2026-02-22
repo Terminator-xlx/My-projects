@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 10 - Управление товарами</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        .menu-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .menu-item:hover {
+            background-color: #45a049;
+        }
+        .menu-item.warning {
+            background-color: #f44336;
+        }
+        .menu-item.warning:hover {
+            background-color: #d32f2f;
+        }
+        .info-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .step {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .nav-links {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Лабораторная работа №10</h1>
+		<h1>Вавилова Елизавета</h1>
+        <h2>Управление базой данных "Товары"</h2>
+        
+        <div class="info-box">
+            <strong>Параметры подключения к БД:</strong><br>
+            Хост: localhost<br>
+            База данных: srv89577_b8<br>
+            Пользователь: srv89577_user8
+        </div>
+        
+        
+        <div class="menu">
+            <!-- Задание 52: Создание таблицы -->
+            <a href="table.php" class="menu-item">
+                1. Создать таблицу Goods (Задание 52)
+            </a>
+            
+            <!-- Задание 53: Добавление первой записи -->
+            <a href="insert_goods.php" class="menu-item">
+                2. Добавить первую запись (Задание 53)
+            </a>
+            
+            <!-- Задание 55: Добавление трёх записей -->
+            <a href="insert_more_goods.php" class="menu-item">
+                3. Добавить три записи (Задание 55)
+            </a>
+            
+            <!-- Задание 56: Форма для добавления записей -->
+            <a href="add_goods.html" class="menu-item">
+                4. Форма добавления товара (Задание 56)
+            </a>
+            
+            <!-- Задание 57: Просмотр всех записей -->
+            <a href="show.php" class="menu-item">
+                5. Просмотр всех товаров (Задание 57)
+            </a>
+            
+            <!-- Тестовая функция для демонстрации работы радиокнопок -->
+            <a href="test_selection.html" class="menu-item">
+                6. Тест выбора товара
+            </a>
+        </div>
+        
+        <div class="info-box">
+            <strong>Текущий статус таблицы:</strong><br>
+            <a href="check_table.php" style="color: #4CAF50; font-weight: bold;">
+                 Проверить наличие таблицы Goods
+            </a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="add_goods.html">Добавить товар</a> | 
+            <a href="show.php">Просмотр товаров</a> | 
+           
+        </div>
+    </div>
+</body>
+</html>
