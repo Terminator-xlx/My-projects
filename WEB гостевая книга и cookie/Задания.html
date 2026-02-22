@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 8 - Все задания.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        .task-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .task-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        .task-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+        .task-card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .task-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .btn-green {
+            background: #27ae60;
+        }
+        .btn-green:hover {
+            background: #219653;
+        }
+        .btn-purple {
+            background: #9b59b6;
+        }
+        .btn-purple:hover {
+            background: #8e44ad;
+        }
+        .note {
+            background: #e8f4fc;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .requirements {
+            background: #fff8e1;
+            border-left: 4px solid #ffb300;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .file-list {
+            background: #f1f8e9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .file-list ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .file-list li {
+            margin: 5px 0;
+            font-family: monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Лабораторная работа 8 - Гостевая книга и Cookie</h1>
+	<h2>Вавилова Елизавета</h2>
+    
+    <div class="section">
+        <h2>Задание 42 - Гостевая книга</h2>
+        <div class="task-grid">
+            <div class="task-card">
+                <h3>Гостевая книга магазина</h3>
+                <p>Форма для ввода отзывов с сохранением в текстовый файл. Отображает последние 50 сообщений.</p>
+                <a href="guest.php" class="btn">Перейти к гостевой книге</a>
+            </div>
+            <div class="task-card">
+                <h3>Файлы:</h3>
+                <div class="file-list">
+                    <ul>
+                        <li>guest.php - основной файл</li>
+                        <li>guest.txt - хранилище отзывов</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Задания 43-44 - Передача данных</h2>
+        <div class="task-grid">
+            <div class="task-card">
+                <h3>Товарный магазин (3 страницы)</h3>
+                <p>Последовательный выбор товара и количества с передачей данных через скрытые поля формы.</p>
+                <a href="form.html" class="btn btn-green">Начать покупки</a>
+            </div>
+            <div class="task-card">
+                <h3>Файлы:</h3>
+                <div class="file-list">
+                    <ul>
+                        <li>form.html - начальная форма</li>
+                        <li>page1.php - выбор товара</li>
+                        <li>page2.php - выбор количества</li>
+                        <li>page3.php - подтверждение</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Задание 45 - Работа с Cookies</h2>
+        <div class="task-grid">
+            <div class="task-card">
+                <h3>Установка и проверка Cookie</h3>
+                <p>Демонстрация работы с cookies: установка, чтение и удаление.</p>
+                <a href="cookie1.php" class="btn btn-purple">Начать работу с Cookie</a>
+            </div>
+            <div class="task-card">
+                <h3>Файлы:</h3>
+                <div class="file-list">
+                    <ul>
+                        <li>cookie1.php - установка</li>
+                        <li>cookie2.php - проверка</li>
+                        <li>cookie3.php - удаление</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Задание 46 - Выбор цвета фона</h2>
+        <div class="task-grid">
+            <div class="task-card">
+                <h3>Персонализация магазина</h3>
+                <p>Выбор цвета фона, который сохраняется на всех страницах сайта с помощью cookies.</p>
+                <a href="color_form.php" class="btn">Выбрать цвет фона</a>
+            </div>
+            <div class="task-card">
+                <h3>Файлы:</h3>
+                <div class="file-list">
+                    <ul>
+                        <li>color_form.php - выбор цвета</li>
+                        <li>color_page1.php - страница 1</li>
+                        <li>color_page2.php - страница 2</li>
+                        <li>color_reset.php - сброс цвета</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
